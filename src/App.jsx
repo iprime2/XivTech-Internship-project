@@ -49,7 +49,7 @@ function App() {
     <div className='app'>
       <Navbar toggleMenu={toggleMenu} />
 
-      <Menu menu={toggleMenu} />
+      {menu && <Menu toggleMenu={toggleMenu} />}
 
       <div className='app-container'>
         <div className='title'>

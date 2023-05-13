@@ -13,6 +13,7 @@
 }
 
 .app {
+  position: relative;
   .app-container {
     margin-top: 20px;
     position: relative;
@@ -246,8 +247,45 @@
 }
 
 .menu {
+  position: absolute;
+  z-index: 1001;
   display: none;
+  background-color: white;
+  box-shadow: 0 0 4px grey;
+  width: 100%;
+
+  .menu-icon {
+    margin-left: auto;
+    cursor: pointer;
+    display: block;
+    font-size: 26px;
+
+    &:hover {
+      color: #2272fb;
+    }
+  }
+
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    .item {
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 22px;
+
+      &:hover {
+        color: #2272fb;
+      }
+    }
+  }
+
   @include tablet {
     display: block;
+    top: 0;
+    width: 100%;
+    padding: 20px;
   }
 }
