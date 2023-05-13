@@ -201,13 +201,13 @@
 }
 
 .collaborate-mobile {
-  display: flex;
+  display: none;
   justify-content: space-between;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   @include tablet {
-    display: block;
+    display: flex;
   }
 
   h1 {
